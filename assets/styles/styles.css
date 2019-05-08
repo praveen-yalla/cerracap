@@ -471,11 +471,11 @@ h3 {
 #intro h3 {
     color: #f09f01;
     font-family: "heading";
-    font-size: 6vh;
+    font-size: 10vh;
 }
 
 #intro h1 {
-    font-size: 12vh;
+    font-size: 19vh;
 }
 
 #intro .scroll-icon {

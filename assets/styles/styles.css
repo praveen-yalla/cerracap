@@ -122,6 +122,11 @@
     letter-spacing: 0;
 }
 
+.container-fluid {
+    padding-right: 10vh;
+    padding-left: 10vh;
+}
+
 html {
     /* font-size: 62.5%; */
 }
@@ -154,11 +159,16 @@ li {
 }
 
 .modal-body {
+    background: #f3f3f3;
+    padding: 0;
+}
+
+.modal-body .container-fluid {
     padding: 0;
 }
 
 .content-wrapper {
-    padding-top: 70px;
+    padding-top: 9vh;
     /* padding: 30px; */
     background: #f5f5f5;
     overflow: hidden;
@@ -169,11 +179,11 @@ li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .navbar-brand {
-    width: 200px;
+    width: 30vh;
 }
 
 .navbar {
-    height: 70px;
+    height: 9vh;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -191,10 +201,35 @@ li {
 }
 
 .navbar-nav .nav-link {
-    font-size: 20px;
+    font-size: 3vh;
     margin: 0 10px;
     font-family: "navfont";
     letter-spacing: 1px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item .sub-menu {
+    display: none;
+    background: #fff;
+}
+
+.nav-item .sub-menu li a {
+    font-size: 2vh;
+    padding: 9px 0;
+    letter-spacing: 0;
+}
+
+.nav-item:hover .sub-menu {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 20vh;
+    border: thin solid #eee;
+    padding-bottom: 5px;
 }
 
 
@@ -436,10 +471,11 @@ h3 {
 #intro h3 {
     color: #f09f01;
     font-family: "heading";
+    font-size: 6vh;
 }
 
 #intro h1 {
-    font-size: 6em;
+    font-size: 12vh;
 }
 
 #intro .scroll-icon {
@@ -468,7 +504,7 @@ h3 {
 
 #slide-img .bio {
     position: absolute;
-    bottom: 16em;
+    bottom: 36vh;
 }
 
 .indust-flpg {
@@ -485,7 +521,7 @@ h3 {
 
 .left-img .bio {
     text-align: right;
-    right: 0;
+    right: 24vh;
 }
 
 .right-img .hm-img {
@@ -494,19 +530,19 @@ h3 {
 
 .right-img .bio {
     text-align: left;
-    left: 0;
+    left: 10vh;
 }
 
 .bio p {
     margin: 0 0 5px 0;
     font-family: "roboto-regular";
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 3vh;
 }
 
 .bio .name {
     font-family: "roboto-medium";
-    font-size: 25px;
+    font-size: 4vh;
     color: #f09f01;
 }
 
@@ -517,11 +553,11 @@ h3 {
 }
 
 #slide-img .text-slide1 .headtxt {
-    font-size: 3em;
+    font-size: 9vh;
     position: absolute;
     right: 0;
-    top: 80px;
-    width: 750px;
+    top: 4vh;
+    width: 135vh;
     text-align: left;
 }
 
@@ -530,7 +566,7 @@ h3 {
 }
 
 .right-img .text-slide1 .headtxt {
-    left: 0;
+    left: 10vh;
 }
 
 .headtxt {
@@ -549,7 +585,7 @@ h3 {
 } */
 
 .hm-img img {
-    max-width: 400px;
+    width: 60vh;
 }
 
 
@@ -562,6 +598,10 @@ h3 {
     padding: 22px;
 }
 
+.sdbr {
+    display: none;
+}
+
 
 /* Footer  */
 
@@ -569,7 +609,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 118px;
+    height: 17vh;
     background: url(../images/WAVE.png);
     background-position: center -20px;
     background-size: cover;
@@ -579,8 +619,8 @@ footer {
 /* Sidebar */
 
 #sidebar {
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 40vh;
+    max-width: 40vh;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -594,7 +634,7 @@ footer {
 
 #dismiss {
     text-align: center;
-    font-size: 23px;
+    font-size: 4vh;
 }
 
 #dismiss .fa {
@@ -606,7 +646,7 @@ footer {
 }
 
 .sidebar-menu {
-    padding-left: 4em;
+    padding-left: 7vh;
     margin-top: 5em;
 }
 
@@ -617,7 +657,7 @@ footer {
 .sidebar-menu li a {
     color: #000;
     letter-spacing: 0px;
-    font-size: 20px;
+    font-size: 3vh;
 }
 
 .sidebar-menu li a:hover {
@@ -659,8 +699,8 @@ footer {
 #foot-wrapper {
     display: block;
     width: 100%;
-    height: 70px;
-    margin-top: 40px;
+    height: 10vh;
+    margin-top: 5vh;
 }
 
 #footer .container {
@@ -671,7 +711,7 @@ footer {
 .footer-list {
     width: 100%;
     position: absolute;
-    bottom: 5px;
+    bottom: 2vh;
 }
 
 .footer-list .foot-menu li {
@@ -680,7 +720,7 @@ footer {
 
 .footer-list .foot-menu li a {
     letter-spacing: 0px;
-    font-size: 14px;
+    font-size: 2vh;
     font-family: "headline";
 }
 
@@ -702,6 +742,19 @@ footer {
     margin-top: 30px;
 }
 
+.static-footer #foot-wrapper {
+    position: relative;
+}
+
+.static-footer #foot-wrapper .footer-list {
+    position: static;
+    padding-top: 3vh;
+}
+
+.static-footer #foot-wrapper .footer-list .patent-txt {
+    position: static;
+}
+
 
 /* Teams */
 
@@ -712,6 +765,8 @@ footer {
 .switch-list li a {
     font-family: "roboto-medium";
     font-weight: bold;
+    font-size: 2.5vh;
+    margin-right: 3vh;
 }
 
 .switch-list .menu-active a {
@@ -730,7 +785,26 @@ footer {
 }
 
 .team-item {
-    padding: 30px;
+    padding: 3vh;
+}
+
+.exit-item {
+    position: relative;
+}
+
+.exit-item::after {
+    content: "Exit";
+    display: inline-block;
+    width: 96%;
+    text-align: center;
+    /* height: 20px; */
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    padding: 3px;
+    color: red;
+    font-size: 22px;
+    border-bottom: 2px solid red;
 }
 
 .teams .tm-img {
@@ -742,7 +816,7 @@ footer {
 
 .teams .titles .name {
     font-family: "roboto-medium";
-    font-size: 15px;
+    font-size: 2.5vh;
     text-transform: uppercase;
     /* margin: 10px 0 0 0; */
     font-weight: bold;
@@ -751,7 +825,7 @@ footer {
 
 .teams .titles .desig {
     font-family: "roboto-regular";
-    font-size: 12px;
+    font-size: 2vh;
 }
 
 .team-item:hover .tm-img {
@@ -788,6 +862,23 @@ footer {
     height: 425px;
 }
 
+.team-img span {
+    display: block;
+    position: relative;
+}
+
+.team-img span::after {
+    content: "";
+    display: block;
+    height: 40px;
+    /* background: #eee; */
+    background-image: linear-gradient(transparent, #f3f3f3 75%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .team-details .titles {
     position: absolute;
     top: 55px;
@@ -805,7 +896,7 @@ footer {
     height: 290px;
     overflow: auto;
     margin-top: 60px;
-    font-size: 11px;
+    font-size: 1.5vh;
 }
 
 .close {
@@ -824,7 +915,7 @@ footer {
 /* Innovation */
 
 .innovation-items .team-item {
-    padding: 15px;
+    padding: 5px;
 }
 
 .innovation-items .team-item:hover {
@@ -844,11 +935,15 @@ footer {
 .logo-details .lg-det .head {
     font-family: "roboto-medium";
     font-weight: bold;
+    font-size: 2vh;
+    padding: 2vh;
+    margin: 0;
 }
 
 .logo-details .lg-det .descp {
     font-family: "roboto-regular";
-    font-size: 13px;
+    font-size: 2vh;
+    padding: 13px;
 }
 
 .logo-details .lg-det .descp span {
@@ -867,19 +962,20 @@ footer {
 }
 
 .address-block {
-    font-size: 12px;
+    font-size: 2vh;
     font-weight: bold;
 }
 
 .address-block p {
     margin: 0;
     font-family: "roboto-regular";
-    line-height: 20px;
+    line-height: 3vh;
 }
 
 .address-block .cn {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 3.1vh;
+    margin-bottom: 1vh;
 }
 
 .address-block .eml {
@@ -900,7 +996,7 @@ footer {
 }
 
 .lbl {
-    font-size: 18px;
+    font-size: 3vh;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -921,7 +1017,7 @@ footer {
 
 .job-descp {
     font-family: "roboto-medium";
-    font-size: 14px;
+    font-size: 2vh;
 }
 
 .job-rls {
@@ -932,7 +1028,7 @@ footer {
 .job-rls li {
     list-style: disc;
     font-family: "roboto-regular";
-    font-size: 13px;
+    font-size: 2vh;
     letter-spacing: 0px;
 }
 
@@ -945,13 +1041,13 @@ footer {
 
 .read_more p {
     font-family: "roboto-medium";
-    font-size: 12px;
+    font-size: 2vh;
     cursor: pointer;
     display: inline;
 }
 
 .jb-tle {
-    font-size: 16px;
+    font-size: 3vh;
     font-family: "roboto-medium";
     text-transform: uppercase;
 }
@@ -964,7 +1060,7 @@ footer {
 .art-item .artle {
     font-family: "roboto-medium";
     letter-spacing: 0;
-    font-size: 15px;
+    font-size: 2vh;
     margin-top: 10px;
     padding-top: 8px;
     border-top: thin solid #f09f01;
@@ -986,7 +1082,7 @@ footer {
 }
 
 .art-item .read-mr {
-    font-size: 10px;
+    font-size: 1.5vh;
 }
 
 .art-item .read-mr p {
@@ -1010,7 +1106,7 @@ footer {
     padding: 12px 0;
     font-family: "roboto-medium";
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 2vh;
     text-align: center;
     border-bottom: thin solid #f09f01;
     margin-bottom: 20px;
@@ -1024,22 +1120,22 @@ footer {
     margin: 25px 0;
     font-family: "roboto-medium";
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 2vh;
 }
 
 .ns-atcle {
-    font-size: 13px;
+    font-size: 2vh;
     font-family: "roboto-medium";
 }
 
 .ns-atcle p {
     font-family: "roboto-medium";
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 2vh;
 }
 
 .rd-mr {
-    font-size: 12px;
+    font-size: 2vh;
     padding-bottom: 5px;
     border-bottom: thin solid #f09f01;
     color: #f09f01;
@@ -1053,7 +1149,7 @@ footer {
 }
 
 .ns-wrp {
-    font-size: 13px;
+    font-size: 2vh;
 }
 
 
@@ -1064,7 +1160,7 @@ footer {
 }
 
 #legal p {
-    font-size: 12px;
+    font-size: 1.8vh;
 }
 
 #legal .lg-head {
@@ -1092,7 +1188,7 @@ footer {
 }
 
 .ind-head {
-    font-size: 20px;
+    font-size: 3vh;
     text-align: center;
     font-family: "roboto-medium";
     margin-bottom: 30px;
@@ -1113,11 +1209,11 @@ footer {
 }
 
 .ind-lbls .icn {
-    width: 30px;
+    width: 5vh;
 }
 
 .ind-lbls .lbl-txt {
-    font-size: 20px;
+    font-size: 3vh;
     font-family: "roboto-medium";
     margin-left: 5px;
 }
@@ -1129,7 +1225,7 @@ footer {
 .mn-dt {}
 
 .mn-dt .mn-hd {
-    font-size: 24px;
+    font-size: 5vh;
     margin: 0;
     font-family: "roboto-medium";
     position: relative;
@@ -1142,15 +1238,15 @@ footer {
 }
 
 .mn-dt .mn-cnt {
-    font-size: 13px;
-    line-height: 20px;
-    height: 240px;
+    font-size: 2vh;
+    line-height: 3vh;
+    height: 42vh;
     overflow: auto;
 }
 
 .mn-wp {
-    width: 900px;
-    height: 457px;
+    width: 125vh;
+    height: 65vh;
     background: url('../images/images/industrialize-b.png') 32px bottom no-repeat;
     background-size: cover;
     position: fixed;
@@ -1160,27 +1256,27 @@ footer {
 
 .mn-itms {
     position: absolute;
-    bottom: 20px;
-    right: 96px;
+    bottom: 2.5vh;
+    right: 13.9vh;
 }
 
 .mn-itms .mn {
     width: 2px;
     display: inline-block;
-    height: 50px;
+    height: 9vh;
     background: #f09f01;
-    margin-right: 112px;
+    margin-right: 15.5vh;
     position: relative;
 }
 
 .mn-nme {
     position: absolute;
-    top: -50px;
-    left: -29px;
+    top: -8vh;
+    left: -5vh;
     font-family: "headline";
     font-weight: bold;
     font-style: italic;
-    font-size: 18px;
+    font-size: 3vh;
     padding: 7px 0;
     cursor: pointer;
 }
@@ -1205,23 +1301,23 @@ footer {
 }
 
 .op1 {
-    bottom: 1px;
+    bottom: 0vh;
 }
 
 .op2 {
-    bottom: 30px;
+    bottom: 4vh;
 }
 
 .op3 {
-    bottom: 85px;
+    bottom: 12vh;
 }
 
 .op4 {
-    bottom: 157px;
+    bottom: 22vh;
 }
 
 .op5 {
-    bottom: 219px;
+    bottom: 30vh;
 }
 
 
@@ -1533,7 +1629,7 @@ Attribution required
 
 @media (max-width: 720px) {
     #intro h1 {
-        font-size: 4em;
+        font-size: 8em;
     }
     #slide-img .text-slide1 .headtxt {
         font-size: 26px;
@@ -1559,7 +1655,8 @@ Attribution required
         display: inline-block;
     }
     .navbar-collapse {
-        background: #f5f5f5;
+        background: #dadada;
+        padding: 4px;
     }
     .switch-list {
         font-size: 15px;
@@ -1663,5 +1760,22 @@ Attribution required
     }
     .indst-data-wrap {
         padding: 20px;
+    }
+    .container-fluid {
+        padding: 10px !important;
+    }
+    .navbar-brand {
+        width: 22vh;
+    }
+    .nav-item .sub-menu {
+        display: block;
+        padding-left: 15px;
+        background: #eee;
+    }
+    .sdbr {
+        display: block;
+    }
+    #sidebarCollapse {
+        display: none;
     }
 }

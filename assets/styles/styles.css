@@ -1778,4 +1778,7 @@ Attribution required
     #sidebarCollapse {
         display: none;
     }
+    .nav-item:hover .sub-menu {
+        position: static;
+    }
 }
